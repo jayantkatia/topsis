@@ -30,6 +30,11 @@ topsis input_file weights impacts output_file
 ### Output
 Creates a *output_file*, that contains the original data with performance score and rank.
 
+Example:
+```bash
+topsis data.xlsx "2,2,3,3,4" "+,-,+,-,+" output.csv 
+```
+
 ## API Usage
 ### Steps
 1. Import topsis function from module topsis
