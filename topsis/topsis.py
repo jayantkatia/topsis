@@ -67,8 +67,8 @@ def topsis(df, weights, impacts):
 
   ops_df = df.iloc[:,1:]
   ## normalized matrix
-  ops_df = ops_df ** 2
-  demoninator = np.sqrt(ops_df.sum(axis=0))
+  ops_df1 = ops_df ** 2
+  demoninator = np.sqrt(ops_df1.sum(axis=0))
   ops_df = ops_df.div(demoninator)
 
   ## weighted matrix
@@ -85,6 +85,7 @@ def topsis(df, weights, impacts):
     else:
       neg_ideal_soln.append(ops_df.iloc[:,i].max())
       ideal_soln.append(ops_df.iloc[:,i].min())
+
   ideal_soln = ops_df.apply(lambda row: np.sqrt(((row-ideal_soln)**2).sum()) , axis=1)
   neg_ideal_soln = ops_df.apply(lambda row: np.sqrt(((row-neg_ideal_soln)**2).sum()) , axis=1)
 
