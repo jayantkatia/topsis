@@ -1,4 +1,4 @@
-# :briefcase: Topsis Package (API & CLI)
+# Topsis Package (API & CLI)
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jayantkatia/topsis/Upload%20Python%20Package?style=for-the-badge)
 ![PyPI](https://img.shields.io/pypi/v/Topsis-Jayant-102097013?color=orange&style=for-the-badge)
@@ -10,12 +10,12 @@ Python package that can be used as an API or as a CLI tool to calculate TOPSIS p
 
 > CLI scripts takes `csv/excel` files as input!
 
-## :rocket: Installation
+## Installation
 ```
 pip install Topsis-Jayant-102097013
 ```
 
-## :computer: Command Line Usage
+## Command Line Usage
 ```
 topsis input_file weights impacts output_file
 ```
@@ -30,7 +30,7 @@ topsis input_file weights impacts output_file
 ### Output
 Creates a *output_file*, that contains the original data with performance score and rank.
 
-## :computer: API Usage
+## API Usage
 ### Steps
 1. Import topsis function from module topsis
 2. Invoke topsis function by passing in data, weights, impacts
@@ -48,8 +48,8 @@ impacts=[1,-1,1,-1,1]
 print(topsis(df, weights, impacts))
 ```
 
-## :memo: License
+## License
 Licensed under the [MIT License](https://github.com/jayantkatia/topsis/blob/main/LICENSE). 
 
-## :sparkles: Development and Contributing
+## Development and Contributing
 Yes, please! Feel free to [contribute, raise issues and recommend best practices.](https://github.com/jayantkatia/topsis/issues)
